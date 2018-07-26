@@ -1,0 +1,50 @@
+<!DOCTYPE html > 
+<html id="htmlId" style="overflow: hidden;">
+  <head>
+  <style>
+  body{
+	background:#333333;
+	width:90%;
+	max-width:940px;
+	margin:0 auto;}
+canvas {
+	background:white;
+    margin: 0 auto;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+#overlay {
+	margin: 0 auto;
+    position: absolute;
+    left: 715px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: monospace;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid #f00;
+    text-shadow: 0px 0px 5px white;
+	font-size:20px;
+}
+</style>
+</head>
+  </head>
+  <body>
+    <div id="divCanvas">
+      <canvas id="canvasId" width="900" height="600"  >
+        Your browser does not support the canvas element.
+      </canvas>
+		<img id="imgTex1" src="paletka.png" width="0" height="0" ></img>
+		<img id="imgTex2" src="paletka.png" width="0" height="0" ></img>
+		<img id="imgTex3" src="boisko.png" width="0" height="0" ></img>
+		<img id="imgTex4" src="pilka.png" width="0" height="0" ></img>
+	  <div id="overlay">
+    <div>Player1: <span id="player1"></span></div>
+    <div>Player2: <span id="player2"></span></div>
+  </div>
+    </div>
+    <script src="game.js">
+    </script>
+  </body>
+</html>
